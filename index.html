@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pedru | Desenvolvedor web em formação e suporte de TI</title>
+  <meta name="description" content="Portfólio de Pedru (Pedro Paulo da Conceição Ramos), de Resende, RJ. Desenvolvedor web em formação (PHP, Laravel, JavaScript), Jovem Aprendiz em suporte de TI.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Pedru | Desenvolvedor web em formação">
+  <meta property="og:description" content="Portfólio com tecnologias em estudo, experiência em suporte de TI e interesse em jogos.">
+  <meta property="og:locale" content="pt_BR">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%2326b5d9'/%3E%3Ccircle cx='16' cy='16' r='9' fill='white'/%3E%3C/svg%3E">
+
+  <!-- Tailwind CSS v3 (CDN, versão fixa) -->
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script>
+    tailwind.config = { theme: { extend: {
+      colors: { ink: '#363e47', soft: '#59636e', cyanw: '#26b5d9', cyand: '#0b7f9e' },
+      fontFamily: { sans: ['"Trebuchet MS"', '"Segoe UI"', 'system-ui', 'sans-serif'], mono: ['Consolas', '"Courier New"', 'monospace'] }
+    } } };
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="font-sans text-ink antialiased pb-28">
+  <a href="#conteudo" class="skip">Pular para o conteúdo</a>
+
+  <!-- ============ HEADER / NAVEGAÇÃO ============ -->
+  <header class="sticky top-0 z-20 backdrop-blur bg-[#d3d8de]/80 border-b border-white/70">
+    <div class="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between">
+      <a href="#topo" class="font-bold tracking-wide">Pedru</a>
+      <nav aria-label="Principal" class="hidden md:flex gap-1">
+        <a class="navlink" href="#sobre">Sobre</a>
+        <a class="navlink" href="#tecnologias">Tecnologias</a>
+        <a class="navlink" href="#experiencia">Experiência</a>
+        <a class="navlink" href="#formacao">Formação</a>
+        <a class="navlink" href="#projetos">Projetos</a>
+        <a class="navlink" href="#contato">Contato</a>
+      </nav>
+      <button id="menuBtn" class="md:hidden w-11 h-11 grid place-items-center rounded-full glossy-btn" aria-expanded="false" aria-controls="menuMobile" aria-label="Abrir menu">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 5h14M3 10h14M3 15h14"/></svg>
+      </button>
+    </div>
+    <nav id="menuMobile" aria-label="Menu mobile" class="hidden md:hidden px-4 pb-3 grid grid-cols-2 gap-2">
+      <a class="navlink text-center" href="#sobre">Sobre</a>
+      <a class="navlink text-center" href="#tecnologias">Tecnologias</a>
+      <a class="navlink text-center" href="#experiencia">Experiência</a>
+      <a class="navlink text-center" href="#formacao">Formação</a>
+      <a class="navlink text-center" href="#projetos">Projetos</a>
+      <a class="navlink text-center" href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main id="conteudo" class="max-w-6xl mx-auto px-4 py-6">
+    <span id="topo"></span>
+
+    <!-- ============ HERO ============ -->
+    <section class="tile reveal grid md:grid-cols-[210px_1fr] gap-6 items-center p-6 md:p-8" aria-labelledby="titulo">
+      <div class="mii mx-auto"><img src="assets/images/WhatsApp_Image_2026-10-08_at_21_11_01__1_.jpg" alt="Avatar estilo Mii do Pedru: cabelo preto espetado, blusa vermelha" width="500" height="500"></div>
+      <div class="text-center md:text-left">
+        <p class="tag">Olá, eu sou</p>
+        <h1 id="titulo" class="text-4xl md:text-5xl font-bold leading-tight mb-3">Pedru</h1>
+        <p class="text-soft text-lg max-w-xl mx-auto md:mx-0">Desenvolvedor web em formação (PHP, Laravel, JavaScript) e futuro estudante de Engenharia de Software na UTFPR. Apaixonado por código limpo, arquitetura de software e jogos.</p>
+        <div class="flex flex-wrap gap-3 mt-5 justify-center md:justify-start">
+          <a href="#projetos" class="glossy-btn px-6 py-3 rounded-full font-semibold">Ver projetos</a>
+          <a href="#contato" class="glossy-btn px-6 py-3 rounded-full font-semibold">Falar comigo</a>
+        </div>
+        <p class="text-sm text-soft mt-4">Resende, Rio de Janeiro, Brasil</p>
+      </div>
+    </section>
+
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-5 mt-5">
+
+      <!-- ============ SOBRE ============ -->
+      <section id="sobre" class="tile reveal md:col-span-8 p-6" aria-labelledby="t-sobre">
+        <p class="tag">Sobre mim</p>
+        <h2 id="t-sobre" class="text-2xl font-bold mb-3">Back-end com PHP, e olho na arquitetura</h2>
+        <p class="text-soft leading-relaxed mb-3">Meu foco é o back-end e o ecossistema PHP. Quero construir aplicações organizadas, fáceis de manter e agradáveis de usar.</p>
+        <p class="text-soft leading-relaxed">Gosto de entender o problema por trás do código: como as regras de negócio viram uma boa estrutura de software e como pequenas decisões de arquitetura afetam o produto no longo prazo.</p>
+      </section>
+
+      <!-- ============ TERMINAL ============ -->
+      <section class="tile term reveal md:col-span-4 p-6" aria-label="Terminal decorativo">
+        <p class="tag">Terminal</p>
+        <p><span class="pr">$</span> whoami</p>
+        <p class="out">pedru</p>
+        <p><span class="pr">$</span> cat estudando.txt</p>
+        <p class="out">php laravel js html css</p>
+        <p><span class="pr">$</span> cat objetivo.txt</p>
+        <p class="out">primeira oportunidade<span class="cursor" aria-hidden="true"></span></p>
+      </section>
+
+      <!-- ============ TECNOLOGIAS ============ -->
+      <section id="tecnologias" class="tile reveal md:col-span-7 p-6" aria-labelledby="t-tec">
+        <p class="tag">Em estudo</p>
+        <h2 id="t-tec" class="text-2xl font-bold mb-1">Tecnologias</h2>
+        <p class="text-soft mb-4">Tudo abaixo está em aprendizado, com prática constante.</p>
+        <dl class="space-y-4">
+          <div><dt class="font-semibold mb-2">Linguagens</dt><dd class="chips"><span class="chip">PHP</span><span class="chip">JavaScript</span><span class="chip">HTML</span><span class="chip">CSS</span></dd></div>
+          <div><dt class="font-semibold mb-2">Framework</dt><dd class="chips"><span class="chip">Laravel</span></dd></div>
+          <div><dt class="font-semibold mb-2">Bancos de dados</dt><dd class="chips"><span class="chip">MySQL</span><span class="chip">SQLite</span></dd></div>
+          <div><dt class="font-semibold mb-2">Ferramentas</dt><dd class="chips"><span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">VS Code</span></dd></div>
+        </dl>
+      </section>
+
+      <!-- ============ JOGOS ============ -->
+      <section id="jogos" class="tile reveal md:col-span-5 p-6" aria-labelledby="t-jogos">
+        <p class="tag">Área paralela</p>
+        <h2 id="t-jogos" class="text-2xl font-bold mb-3">Jogos</h2>
+        <p class="text-soft leading-relaxed mb-4">Os primeiros contatos já aconteceram. Sigo explorando lógica interativa e mecânicas de gameplay.</p>
+        <div class="chips"><span class="chip">Unreal Engine</span><span class="chip">CopperCube</span></div>
+      </section>
+
+      <!-- ============ EXPERIÊNCIA ============ -->
+      <section id="experiencia" class="tile reveal md:col-span-7 p-6" aria-labelledby="t-exp">
+        <p class="tag">Jovem Aprendiz</p>
+        <h2 id="t-exp" class="text-2xl font-bold">Suporte de TI na MGF</h2>
+        <p class="text-sm text-soft mb-4">Período: [PERÍODO]</p>
+        <ul class="space-y-2 text-soft">
+          <li class="li">Formatação de computadores</li>
+          <li class="li">Crimpagem de cabos de rede</li>
+          <li class="li">Manutenção de computadores com problemas de software</li>
+        </ul>
+        <div class="chips mt-4"><span class="chip">Ventoy</span></div>
+      </section>
+
+      <!-- ============ FORMAÇÃO ============ -->
+      <section id="formacao" class="tile reveal md:col-span-5 p-6" aria-labelledby="t-form">
+        <p class="tag">Estudos</p>
+        <h2 id="t-form" class="text-2xl font-bold mb-3">Formação</h2>
+        <p class="font-semibold">SENAI RJ <span class="text-soft font-normal">(em andamento)</span></p>
+        <ul class="space-y-2 text-soft my-2">
+          <li class="li">Informática e Robótica</li>
+          <li class="li">Análise e Desenvolvimento de Sistemas</li>
+        </ul>
+        <p class="font-semibold mt-4">Próximo objetivo</p>
+        <p class="text-soft">Cursar Engenharia de Software na UTFPR.</p>
+      </section>
+
+      <!-- ============ PROJETOS ============ -->
+      <section id="projetos" class="tile reveal md:col-span-6 p-6 text-center soon" aria-labelledby="t-proj">
+        <p class="tag">Projetos</p>
+        <h2 id="t-proj" class="text-2xl font-bold mb-2">Em breve</h2>
+        <p class="text-soft mb-4">Os primeiros projetos estão a caminho. Acompanhe no GitHub.</p>
+        <a href="https://github.com/pedru224" target="_blank" rel="noopener noreferrer" class="glossy-btn inline-block px-6 py-3 rounded-full font-semibold">Abrir meu GitHub</a>
+      </section>
+
+      <!-- ============ OBJETIVO ============ -->
+      <section class="tile reveal md:col-span-6 p-6" aria-labelledby="t-obj">
+        <p class="tag">Objetivo</p>
+        <h2 id="t-obj" class="text-2xl font-bold mb-3">Primeira oportunidade</h2>
+        <p class="text-soft leading-relaxed">Colaborar em projetos reais, aprender com uma equipe e contribuir com dedicação, curiosidade e disciplina.</p>
+      </section>
+
+      <!-- ============ CONTATO ============ -->
+      <section id="contato" class="tile reveal md:col-span-12 p-6" aria-labelledby="t-cont">
+        <p class="tag">Contato</p>
+        <h2 id="t-cont" class="text-2xl font-bold mb-4">Vamos conversar</h2>
+        <div class="grid sm:grid-cols-3 gap-3">
+          <a class="glossy-btn rounded-2xl px-5 py-4 text-center font-semibold" href="mailto:pedrpaulo224@gmail.com">E-mail<span class="block text-sm font-normal text-soft break-all">pedrpaulo224@gmail.com</span></a>
+          <a class="glossy-btn rounded-2xl px-5 py-4 text-center font-semibold" href="https://www.linkedin.com/in/pedro-paulo-1b238b392/" target="_blank" rel="noopener noreferrer">LinkedIn<span class="block text-sm font-normal text-soft">pedro-paulo</span></a>
+          <a class="glossy-btn rounded-2xl px-5 py-4 text-center font-semibold" href="https://github.com/pedru224" target="_blank" rel="noopener noreferrer">GitHub<span class="block text-sm font-normal text-soft">pedru224</span></a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="text-center text-sm text-soft pb-6">© <span id="ano">2026</span> Pedro Paulo da Conceição Ramos. Feito com HTML, Tailwind CSS e JavaScript.</footer>
+
+  <!-- ============ BARRA INFERIOR (estilo Wii) ============ -->
+  <div class="wiibar" role="navigation" aria-label="Atalhos">
+    <a class="wbtn" href="#topo" aria-label="Voltar ao início">Início</a>
+    <div class="text-center leading-tight"><strong id="hora" class="block text-2xl tracking-wider">--:--</strong><span id="data" class="text-sm text-soft"></span></div>
+    <a class="wbtn" href="#contato" aria-label="Ir para contato">Contato</a>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
